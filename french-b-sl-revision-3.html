@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Révisions Français B SL — Objectif 7</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f2e7; --surface:#ffffff; --ink:#23262b; --navy:#1e3350; --navy-light:#2c496f;
+  --accent:#ad3b3b; --muted:#74705f; --border:#e6ddc6; --radius:10px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:'Source Sans 3',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;color:var(--navy);margin-top:0;}
+.site-header{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;padding:2.3rem 1.5rem 1.8rem;text-align:center;}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;opacity:.85;margin:0 0 .6rem;}
+.site-header h1{color:#fff;font-size:2rem;margin:0 0 .6rem;}
+.tagline{opacity:.92;max-width:680px;margin:0 auto;font-size:.93rem;}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;padding:.9rem 1.5rem;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;}
+.tab-btn{border:1px solid var(--border);background:var(--bg);color:var(--navy);padding:.5rem 1rem;border-radius:999px;cursor:pointer;font-size:.8rem;font-weight:600;font-family:inherit;transition:all .15s;}
+.tab-btn:hover{background:#efe6d0;}
+.tab-btn.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+.tab-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.content{max-width:960px;margin:0 auto;padding:2.2rem 1.5rem 4rem;}
+.tab-content{display:none;}
+.tab-content.active{display:block;animation:fadeIn .25s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+@media(prefers-reduced-motion:reduce){.tab-content.active{animation:none;}html{scroll-behavior:auto;}}
+.tab-content h2{font-size:1.6rem;display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;border-bottom:2px solid var(--accent);padding-bottom:.5rem;margin-bottom:1rem;}
+.theme-en{font-size:1rem;font-weight:400;color:var(--muted);font-style:italic;}
+.subthemes{color:var(--muted);font-size:.88rem;margin-bottom:1.6rem;}
+.tab-content h3{font-size:1.1rem;margin-top:2.1rem;margin-bottom:.8rem;color:var(--navy-light);border-left:4px solid var(--accent);padding-left:.6rem;}
+.group-label{font-weight:700;color:var(--navy);margin:1.3rem 0 .4rem;font-size:.93rem;}
+.vocab-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-bottom:1rem;}
+@media(max-width:680px){.vocab-grid{grid-template-columns:1fr;}}
+.vocab-table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.07);}
+.vocab-table caption{font-weight:700;text-align:left;padding:.5rem .8rem;background:var(--navy);color:#fff;font-family:'Fraunces',serif;font-size:.92rem;}
+.vocab-table th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:.4rem .8rem;border-bottom:1px solid var(--border);}
+.vocab-table td{padding:.36rem .8rem;border-bottom:1px solid var(--border);font-size:.87rem;}
+.vocab-table tr:last-child td{border-bottom:none;}
+.vocab-table td:first-child{font-weight:600;}
+.phrase-list{list-style:none;margin:0 0 1rem;padding:0;}
+.phrase-list li{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.5rem 0;border-bottom:1px dashed var(--border);}
+.phrase-list li:last-child{border-bottom:none;}
+.fr{font-weight:600;color:var(--ink);}
+.en{color:var(--muted);font-style:italic;}
+.tip-box{background:#fdf6e3;border-left:4px solid var(--accent);padding:.9rem 1.1rem;border-radius:6px;margin:1.2rem 0;}
+.tip-box strong{color:var(--accent);display:block;margin-bottom:.4rem;}
+.tip-box ul{margin:.3rem 0 0;padding-left:1.2rem;}
+.tip-box li{margin-bottom:.35rem;font-size:.92rem;}
+.tip-list{padding-left:1.2rem;}
+.tip-list li{margin-bottom:.5rem;}
+.table-scroll{overflow-x:auto;margin-bottom:.6rem;}
+.conj-table{border-collapse:collapse;width:100%;min-width:640px;background:var(--surface);border-radius:var(--radius);overflow:hidden;}
+.conj-table th,.conj-table td{padding:.5rem .65rem;border-bottom:1px solid var(--border);text-align:left;font-size:.85rem;white-space:nowrap;}
+.conj-table th{background:var(--navy);color:#fff;font-weight:600;}
+.conj-table td:first-child{font-weight:600;color:var(--navy);}
+.conj-table tr:last-child td{border-bottom:none;}
+.example{font-size:.9rem;color:var(--muted);background:var(--surface);padding:.6rem .9rem;border-radius:6px;border:1px solid var(--border);}
+.note{font-size:.85rem;color:var(--muted);}
+.culture-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.2rem;margin-bottom:1.1rem;}
+.culture-block h4{margin:0 0 .6rem;color:var(--navy);font-size:1rem;}
+.culture-block dl{margin:0;}
+.culture-block dt{font-weight:700;color:var(--ink);margin-top:.55rem;font-size:.92rem;}
+.culture-block dd{margin:.15rem 0 0;color:var(--muted);font-size:.87rem;}
+.connector-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
+@media(max-width:680px){.connector-grid{grid-template-columns:1fr;}}
+.connector-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;}
+.connector-card h4{margin:0 0 .55rem;color:var(--accent);font-size:.98rem;}
+.connector-card ul{margin:0;padding-left:1.1rem;}
+.connector-card li{margin-bottom:.35rem;font-size:.88rem;}
+.site-footer{text-align:center;padding:2rem 1.5rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);}
+.conjugator-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;margin-top:1rem;}
+.conj-input-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:.9rem;}
+.conj-input-row input{flex:1;min-width:200px;padding:.6rem .8rem;border:1px solid var(--border);border-radius:8px;font-size:.95rem;font-family:inherit;}
+.conj-input-row button{background:var(--accent);color:#fff;border:none;padding:.6rem 1.3rem;border-radius:8px;font-weight:600;cursor:pointer;font-family:inherit;font-size:.9rem;}
+.conj-input-row button:hover{opacity:.9;}
+.quick-verbs{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-bottom:.8rem;font-size:.85rem;color:var(--muted);}
+.quick-btn{background:var(--bg);border:1px solid var(--border);color:var(--navy);padding:.3rem .7rem;border-radius:999px;cursor:pointer;font-size:.8rem;font-family:inherit;}
+.quick-btn:hover{background:#efe6d0;}
+#conjResults h4{margin:1rem 0 .5rem;color:var(--navy);text-transform:lowercase;}
+@media(max-width:640px){.site-header h1{font-size:1.5rem;}.content{padding:1.5rem 1rem 3rem;}.tabs{padding:.7rem 1rem;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <p class="eyebrow">IB Français B · SL · Niveau B2</p>
+  <h1>Révisions Express — Objectif 7</h1>
+  <p class="tagline">Subjonctif, tous les temps + conjugueur automatique, vocabulaire exhaustif par thème et sous-thème, connecteurs, idiomes et repères culturels français.</p>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button class="tab-btn active" onclick="showTab('overview', this)">Accueil</button>
+  <button class="tab-btn" onclick="showTab('subjonctif', this)">Subjonctif</button>
+  <button class="tab-btn" onclick="showTab('temps', this)">Temps & Conjugueur</button>
+  <button class="tab-btn" onclick="showTab('identites', this)">1. Identités</button>
+  <button class="tab-btn" onclick="showTab('experiences', this)">2. Expériences</button>
+  <button class="tab-btn" onclick="showTab('ingeniosite', this)">3. Ingéniosité</button>
+  <button class="tab-btn" onclick="showTab('organisation', this)">4. Organisation</button>
+  <button class="tab-btn" onclick="showTab('planete', this)">5. Planète</button>
+  <button class="tab-btn" onclick="showTab('toolkit', this)">Connecteurs & Idiomes</button>
+</nav>
+
+<main class="content">
+
+<section id="overview" class="tab-content active">
+  <h2>Bienvenue <span class="theme-en">Welcome</span></h2>
+  <p>Version enrichie : vocabulaire exhaustif par thème/sous-thème, tous les temps utiles (présent, imparfait, passé composé, futur proche, futur simple, conditionnel, subjonctif) avec un <strong>conjugueur automatique</strong>, connecteurs, idiomes et repères culturels français. Niveau visé : B2 / note 7. Tout le vocabulaire est traduit en anglais.</p>
+
+  <h3>Rappels utiles</h3>
+  <ul class="tip-list">
+    <li><strong>Adapte le registre</strong> au type de texte (email informel ≠ article de blog ≠ lettre formelle).</li>
+    <li><strong>Varie tes temps</strong> — mélanger passé composé/imparfait et utiliser le conditionnel ou le subjonctif montre une vraie maîtrise.</li>
+    <li><strong>Enchaîne tes idées</strong> avec des connecteurs — très valorisé par les examinateurs.</li>
+    <li><strong>Relis</strong> les accords (sujet/verbe, adjectif/nom, participe passé avec être) avant de rendre.</li>
+    <li><strong>Évite les anglicismes</strong> et les traductions mot-à-mot de l'anglais.</li>
+    <li><strong>Varie ton vocabulaire</strong> — utilise les synonymes proposés plutôt que de répéter le même mot.</li>
+  </ul>
+
+  <h3>Comment utiliser ce site</h3>
+  <p>Navigue avec les onglets. "Temps & Conjugueur" explique quand utiliser chaque temps et inclut un outil : tape n'importe quel verbe à l'infinitif et obtiens sa conjugaison complète. Chaque thème est divisé en sous-thèmes avec noms, verbes et phrases utiles. "Organisation" contient aussi des repères sur le système scolaire, le travail et la vie politique françaises.</p>
+</section>
+
+<section id="subjonctif" class="tab-content">
+  <h2>Le Subjonctif <span class="theme-en">The Subjunctive</span></h2>
+  <p>Utilisé après des expressions de nécessité, volonté, émotion, doute et certaines conjonctions — quand il y a un <strong>changement de sujet</strong> entre les deux parties de la phrase.</p>
+
+  <h3>Formation régulière</h3>
+  <p>Radical de la 3<sup>e</sup> personne du pluriel au présent (<em>ils/elles</em>) + terminaisons <strong>-e, -es, -e, -ions, -iez, -ent</strong>.</p>
+  <p class="example">Ex. <em>parler</em> → ils parlent → que je parle, que tu parles, qu'il/elle parle, que nous parlions, que vous parliez, qu'ils/elles parlent</p>
+
+  <h3>Les verbes irréguliers essentiels</h3>
+  <div class="table-scroll">
+  <table class="conj-table">
+    <thead><tr><th></th><th>être</th><th>avoir</th><th>aller</th><th>faire</th><th>pouvoir</th><th>savoir</th><th>vouloir</th></tr></thead>
+    <tbody>
+      <tr><td>que je/j'</td><td>sois</td><td>aie</td><td>aille</td><td>fasse</td><td>puisse</td><td>sache</td><td>veuille</td></tr>
+      <tr><td>que tu</td><td>sois</td><td>aies</td><td>ailles</td><td>fasses</td><td>puisses</td><td>saches</td><td>veuilles</td></tr>
+      <tr><td>qu'il/elle/on</td><td>soit</td><td>ait</td><td>aille</td><td>fasse</td><td>puisse</td><td>sache</td><td>veuille</td></tr>
+      <tr><td>que nous</td><td>soyons</td><td>ayons</td><td>allions</td><td>fassions</td><td>puissions</td><td>sachions</td><td>voulions</td></tr>
+      <tr><td>que vous</td><td>soyez</td><td>ayez</td><td>alliez</td><td>fassiez</td><td>puissiez</td><td>sachiez</td><td>vouliez</td></tr>
+      <tr><td>qu'ils/elles</td><td>soient</td><td>aient</td><td>aillent</td><td>fassent</td><td>puissent</td><td>sachent</td><td>veuillent</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">+ falloir → <em>qu'il faille</em> (impersonnel uniquement) · valoir → <em>que je vaille, que nous valions...</em> · (retrouve n'importe quel autre verbe dans le Conjugueur automatique ➜ onglet "Temps & Conjugueur")</p>
+
+  <h3>Verbes à radical qui change (bonus)</h3>
+  <p>Pour prendre, venir, tenir, devoir, recevoir, boire, mourir... le radical change entre je/tu/il/ils (radical "fort") et nous/vous (radical identique au présent de l'indicatif). Ex. <em>prendre</em> → que je pr<strong>enn</strong>e, mais que nous pr<strong>en</strong>ions, que vous pr<strong>en</strong>iez.</p>
+
+  <h3>Déclencheurs — amorces de phrases</h3>
+
+  <p class="group-label">Nécessité / obligation</p>
+  <ul class="phrase-list">
+    <li><span class="fr">Il faut que...</span><span class="en">It's necessary that... / We must...</span></li>
+    <li><span class="fr">Il est nécessaire que...</span><span class="en">It's necessary that...</span></li>
+    <li><span class="fr">Il est indispensable que...</span><span class="en">It's essential that...</span></li>
+  </ul>
+
+  <p class="group-label">Volonté, souhait, préférence</p>
+  <ul class="phrase-list">
+    <li><span class="fr">Je veux que...</span><span class="en">I want...</span></li>
+    <li><span class="fr">Je voudrais / j'aimerais que...</span><span class="en">I would like...</span></li>
+    <li><span class="fr">Je souhaite que...</span><span class="en">I wish that...</span></li>
+    <li><span class="fr">Je préfère que...</span><span class="en">I prefer that...</span></li>
+  </ul>
+
+  <p class="group-label">Émotion, jugement</p>
+  <ul class="phrase-list">
+    <li><span class="fr">Je suis content(e)/heureux(se) que...</span><span class="en">I'm happy that...</span></li>
+    <li><span class="fr">Je suis triste/déçu(e) que...</span><span class="en">I'm sad/disappointed that...</span></li>
+    <li><span class="fr">Je suis surpris(e) que...</span><span class="en">I'm surprised that...</span></li>
+    <li><span class="fr">C'est dommage que...</span><span class="en">It's a shame that...</span></li>
+    <li><span class="fr">J'ai peur / je crains que...</span><span class="en">I'm afraid that...</span></li>
+  </ul>
+
+  <p class="group-label">Doute, opinion négative</p>
+  <ul class="phrase-list">
+    <li><span class="fr">Je doute que...</span><span class="en">I doubt that...</span></li>
+    <li><span class="fr">Je ne pense/crois pas que...</span><span class="en">I don't think/believe that...</span></li>
+    <li><span class="fr">Il est peu probable que...</span><span class="en">It's unlikely that...</span></li>
+    <li><span class="fr">Il n'est pas certain que...</span><span class="en">It's not certain that...</span></li>
+  </ul>
+
+  <p class="group-label">Possibilité</p>
+  <ul class="phrase-list">
+    <li><span class="fr">Il est possible / impossible que...</span><span class="en">It's possible / impossible that...</span></li>
+    <li><span class="fr">Il se peut que...</span><span class="en">It might be that...</span></li>
+  </ul>
+
+  <p class="group-label">Conjonctions</p>
+  <ul class="phrase-list">
+    <li><span class="fr">bien que / quoique...</span><span class="en">although...</span></li>
+    <li><span class="fr">pour que / afin que...</span><span class="en">so that...</span></li>
+    <li><span class="fr">avant que...</span><span class="en">before...</span></li>
+    <li><span class="fr">jusqu'à ce que...</span><span class="en">until...</span></li>
+    <li><span class="fr">à moins que...</span><span class="en">unless...</span></li>
+    <li><span class="fr">à condition que / pourvu que...</span><span class="en">provided that...</span></li>
+    <li><span class="fr">de peur que / de crainte que...</span><span class="en">for fear that...</span></li>
+    <li><span class="fr">sans que...</span><span class="en">without...</span></li>
+  </ul>
+
+  <p class="group-label">Superlatifs & unicité</p>
+  <ul class="phrase-list">
+    <li><span class="fr">C'est le/la seul(e)... qui/que...</span><span class="en">He/she is the only one who/that...</span></li>
+    <li><span class="fr">C'est le meilleur/pire... que...</span><span class="en">It's the best/worst... that...</span></li>
+  </ul>
+  <p class="example">Ex. <em>C'est le meilleur film que j'aie jamais vu.</em> (It's the best film I've ever seen.)</p>
+
+  <div class="tip-box">
+    <strong>⚠️ Pièges classiques à éviter</strong>
+    <ul>
+      <li><strong>après que</strong> + indicatif (pas subjonctif !) — contrairement à "avant que". Ex. <em>Il est parti après qu'elle est arrivée.</em></li>
+      <li><strong>espérer que</strong> + indicatif — Ex. <em>J'espère qu'il viendra</em> (pas "vienne").</li>
+      <li><strong>il est probable que</strong> + indicatif, mais <strong>il est peu probable que</strong> + subjonctif.</li>
+      <li><strong>penser/croire que</strong> à l'affirmatif + indicatif ; à la forme négative ou interrogative → souvent subjonctif.</li>
+    </ul>
+  </div>
+
+  <h3>Bonus : autres structures B2 que les examinateurs adorent</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Si + plus-que-parfait, conditionnel passé</span><span class="en">Si j'avais su, je ne serais pas venu.</span></li>
+    <li><span class="fr">Le gérondif : en + participe présent</span><span class="en">Il a réussi en travaillant dur.</span></li>
+    <li><span class="fr">La voix passive : être + participe passé</span><span class="en">Le problème a été résolu par les scientifiques.</span></li>
+    <li><span class="fr">Le discours indirect</span><span class="en">Il a dit qu'il viendrait.</span></li>
+  </ul>
+</section>
+
+<section id="temps" class="tab-content">
+  <h2>Temps & Conjugueur <span class="theme-en">Tenses & Conjugator</span></h2>
+
+  <h3>Quand utiliser quel temps ?</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Présent</span><span class="en">current actions, habits, general truths — Je mange une pomme.</span></li>
+    <li><span class="fr">Passé composé</span><span class="en">completed past actions/events — J'ai mangé une pomme.</span></li>
+    <li><span class="fr">Imparfait</span><span class="en">descriptions, habits, ongoing background actions — Je mangeais quand tu es arrivé.</span></li>
+    <li><span class="fr">Futur proche</span><span class="en">near future, planned actions — Je vais manger dans 5 minutes.</span></li>
+    <li><span class="fr">Futur simple</span><span class="en">future events, predictions, promises — Je mangerai demain soir.</span></li>
+    <li><span class="fr">Conditionnel présent</span><span class="en">hypotheticals, polite requests, advice — Je mangerais si j'avais faim.</span></li>
+    <li><span class="fr">Subjonctif présent</span><span class="en">after necessity/emotion/doubt triggers — Il faut que je mange.</span></li>
+  </ul>
+
+  <h3>Formation express</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Passé composé</span><span class="en">avoir/être (présent) + participe passé</span></li>
+    <li><span class="fr">Imparfait</span><span class="en">radical "nous" du présent (sans -ons) + ais/ais/ait/ions/iez/aient</span></li>
+    <li><span class="fr">Futur simple</span><span class="en">infinitif (ou radical irrégulier) + ai/as/a/ons/ez/ont</span></li>
+    <li><span class="fr">Futur proche</span><span class="en">aller (présent) + infinitif</span></li>
+    <li><span class="fr">Conditionnel</span><span class="en">même radical que le futur + ais/ais/ait/ions/iez/aient</span></li>
+  </ul>
+
+  <div class="tip-box">
+    <strong>🚗 Avoir ou être au passé composé ? — "Dr & Mrs Vandertramp"</strong>
+    <ul>
+      <li><strong>D</strong>evenir, <strong>R</strong>evenir, <strong>M</strong>onter, <strong>R</strong>ester, <strong>S</strong>ortir, <strong>V</strong>enir, <strong>A</strong>ller, <strong>N</strong>aître, <strong>D</strong>escendre, <strong>E</strong>ntrer, <strong>R</strong>etourner, <strong>T</strong>omber, <strong>R</strong>entrer, <strong>A</strong>rriver, <strong>M</strong>ourir, <strong>P</strong>artir → tous avec <strong>être</strong> (+ leurs composés : redevenir, ressortir...)</li>
+      <li>Tous les verbes <strong>pronominaux</strong> (se lever, s'appeler, se sentir...) → aussi avec <strong>être</strong></li>
+      <li>Tous les autres verbes → avec <strong>avoir</strong></li>
+      <li>Avec être, le participe s'accorde avec le sujet : <em>elle est partie, ils sont partis, elles sont parties</em>.</li>
+    </ul>
+  </div>
+
+  <h3>🔧 Conjugueur automatique</h3>
+  <p>Tape un verbe à l'infinitif (ex : parler, finir, vendre, être, avoir, se lever, préférer, envoyer...) et obtiens sa conjugaison complète dans les 7 temps essentiels. Couvre les verbes réguliers (-er, -ir, -re, avec les changements orthographiques : -cer/-ger, e→è, doublement de consonne, -oyer/-uyer) et une quarantaine de verbes irréguliers courants.</p>
+  <div class="conjugator-box">
+    <div class="conj-input-row">
+      <input type="text" id="verbInput" placeholder="ex : réussir, être, se lever..." autocomplete="off" onkeydown="if(event.key==='Enter') runConjugation();">
+      <button onclick="runConjugation()">Conjuguer</button>
+    </div>
+    <div class="quick-verbs">
+      <span>Essaie :</span>
+      <button class="quick-btn" onclick="quickConj('être')">être</button>
+      <button class="quick-btn" onclick="quickConj('avoir')">avoir</button>
+      <button class="quick-btn" onclick="quickConj('aller')">aller</button>
+      <button class="quick-btn" onclick="quickConj('finir')">finir</button>
+      <button class="quick-btn" onclick="quickConj('vendre')">vendre</button>
+      <button class="quick-btn" onclick="quickConj('se lever')">se lever</button>
+      <button class="quick-btn" onclick="quickConj('faire')">faire</button>
+      <button class="quick-btn" onclick="quickConj('prendre')">prendre</button>
+    </div>
+    <div id="conjResults"></div>
+  </div>
+</section>
+
+<section id="identites" class="tab-content">
+  <h2>1. Identités <span class="theme-en">Identities</span></h2>
+  <p class="subthemes">Sous-thèmes : mode de vie · santé et bien-être · croyances et valeurs · sous-cultures · langue et identité</p>
+
+  <h3>Mode de vie & santé</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>le mode de vie</td><td>lifestyle</td></tr>
+        <tr><td>la santé</td><td>health</td></tr>
+        <tr><td>le bien-être</td><td>well-being</td></tr>
+        <tr><td>le mal-être</td><td>unease / malaise</td></tr>
+        <tr><td>l'alimentation (f)</td><td>diet / food</td></tr>
+        <tr><td>un régime alimentaire</td><td>a diet</td></tr>
+        <tr><td>la nutrition</td><td>nutrition</td></tr>
+        <tr><td>le sommeil</td><td>sleep</td></tr>
+        <tr><td>l'insomnie (f)</td><td>insomnia</td></tr>
+        <tr><td>le stress</td><td>stress</td></tr>
+        <tr><td>la pression sociale</td><td>social/peer pressure</td></tr>
+        <tr><td>la confiance en soi</td><td>self-confidence</td></tr>
+        <tr><td>l'estime de soi (f)</td><td>self-esteem</td></tr>
+        <tr><td>l'image corporelle (f)</td><td>body image</td></tr>
+        <tr><td>les normes de beauté (f pl)</td><td>beauty standards</td></tr>
+        <tr><td>l'apparence (f)</td><td>appearance</td></tr>
+        <tr><td>une habitude (saine/malsaine)</td><td>a (healthy/unhealthy) habit</td></tr>
+        <tr><td>la santé mentale</td><td>mental health</td></tr>
+        <tr><td>un trouble alimentaire</td><td>an eating disorder</td></tr>
+        <tr><td>une addiction</td><td>an addiction</td></tr>
+        <tr><td>la dépression</td><td>depression</td></tr>
+        <tr><td>l'anxiété (f)</td><td>anxiety</td></tr>
+        <tr><td>un(e) psychologue</td><td>a psychologist</td></tr>
+        <tr><td>la méditation</td><td>meditation</td></tr>
+        <tr><td>l'épanouissement (m)</td><td>fulfilment / flourishing</td></tr>
+        <tr><td>la forme physique</td><td>physical fitness</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>se sentir</td><td>to feel</td></tr>
+        <tr><td>prendre soin de</td><td>to take care of</td></tr>
+        <tr><td>faire attention à</td><td>to watch / pay attention to</td></tr>
+        <tr><td>se soucier de</td><td>to worry about</td></tr>
+        <tr><td>négliger</td><td>to neglect</td></tr>
+        <tr><td>se détendre / se relaxer</td><td>to relax</td></tr>
+        <tr><td>s'épanouir</td><td>to flourish</td></tr>
+        <tr><td>maintenir / équilibrer</td><td>to maintain / balance</td></tr>
+        <tr><td>faire du sport</td><td>to exercise</td></tr>
+        <tr><td>gérer (son stress)</td><td>to manage (one's stress)</td></tr>
+        <tr><td>consulter (un médecin)</td><td>to see (a doctor)</td></tr>
+        <tr><td>méditer</td><td>to meditate</td></tr>
+        <tr><td>récupérer</td><td>to recover</td></tr>
+        <tr><td>souffrir de</td><td>to suffer from</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Valeurs, croyances & sous-cultures</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>une valeur</td><td>a value</td></tr>
+        <tr><td>un principe</td><td>a principle</td></tr>
+        <tr><td>une conviction</td><td>a conviction</td></tr>
+        <tr><td>une croyance</td><td>a belief</td></tr>
+        <tr><td>la religion</td><td>religion</td></tr>
+        <tr><td>la spiritualité</td><td>spirituality</td></tr>
+        <tr><td>l'appartenance (f)</td><td>belonging</td></tr>
+        <tr><td>une sous-culture</td><td>a subculture</td></tr>
+        <tr><td>un mouvement</td><td>a movement</td></tr>
+        <tr><td>l'identité (f)</td><td>identity</td></tr>
+        <tr><td>la personnalité</td><td>personality</td></tr>
+        <tr><td>le caractère</td><td>character</td></tr>
+        <tr><td>un préjugé</td><td>a prejudice</td></tr>
+        <tr><td>la tolérance</td><td>tolerance</td></tr>
+        <tr><td>l'ouverture d'esprit (f)</td><td>open-mindedness</td></tr>
+        <tr><td>l'individualité (f)</td><td>individuality</td></tr>
+        <tr><td>un stéréotype</td><td>a stereotype</td></tr>
+        <tr><td>la laïcité</td><td>secularism</td></tr>
+        <tr><td>la diversité</td><td>diversity</td></tr>
+        <tr><td>une génération</td><td>a generation</td></tr>
+        <tr><td>le conflit de générations</td><td>the generation gap</td></tr>
+        <tr><td>l'intégration (f)</td><td>integration</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>croire en</td><td>to believe in</td></tr>
+        <tr><td>s'identifier à</td><td>to identify with</td></tr>
+        <tr><td>appartenir à</td><td>to belong to</td></tr>
+        <tr><td>se définir</td><td>to define oneself</td></tr>
+        <tr><td>respecter / tolérer</td><td>to respect / tolerate</td></tr>
+        <tr><td>juger</td><td>to judge</td></tr>
+        <tr><td>se distinguer</td><td>to stand out</td></tr>
+        <tr><td>partager</td><td>to share</td></tr>
+        <tr><td>adhérer à</td><td>to subscribe to (an idea)</td></tr>
+        <tr><td>rejeter</td><td>to reject</td></tr>
+        <tr><td>remettre en question</td><td>to question</td></tr>
+        <tr><td>s'affirmer</td><td>to assert oneself</td></tr>
+        <tr><td>se conformer à</td><td>to conform to</td></tr>
+        <tr><td>se rebeller</td><td>to rebel</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Phrases utiles</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Je me sens vraiment moi-même quand...</span><span class="en">I feel truly myself when...</span></li>
+    <li><span class="fr">Ce qui compte le plus pour moi, c'est...</span><span class="en">What matters most to me is...</span></li>
+    <li><span class="fr">Il est essentiel de prendre soin de sa santé mentale.</span><span class="en">It's essential to look after one's mental health.</span></li>
+    <li><span class="fr">Chacun a le droit de vivre selon ses propres valeurs.</span><span class="en">Everyone has the right to live by their own values.</span></li>
+    <li><span class="fr">Cela fait partie intégrante de mon identité.</span><span class="en">That's an integral part of my identity.</span></li>
+    <li><span class="fr">Il ne faut pas juger les gens sur leur apparence.</span><span class="en">You shouldn't judge people on their appearance.</span></li>
+    <li><span class="fr">De nos jours, les jeunes subissent une pression énorme pour...</span><span class="en">Nowadays, young people face enormous pressure to...</span></li>
+    <li><span class="fr">Trouver son propre chemin n'est pas toujours facile.</span><span class="en">Finding your own path isn't always easy.</span></li>
+    <li><span class="fr">Il est important de rester fidèle à soi-même.</span><span class="en">It's important to stay true to yourself.</span></li>
+    <li><span class="fr">Nos origines influencent en grande partie qui nous sommes.</span><span class="en">Our origins largely shape who we are.</span></li>
+    <li><span class="fr">On ne devrait pas avoir honte de ses racines.</span><span class="en">One shouldn't be ashamed of one's roots.</span></li>
+  </ul>
+</section>
+
+<section id="experiences" class="tab-content">
+  <h2>2. Expériences <span class="theme-en">Experiences</span></h2>
+  <p class="subthemes">Sous-thèmes : routine quotidienne · loisirs · vacances et voyages · fêtes et célébrations · rites de passage · migration</p>
+
+  <h3>Quotidien & loisirs</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>le quotidien</td><td>daily life</td></tr>
+        <tr><td>la routine</td><td>routine</td></tr>
+        <tr><td>le temps libre</td><td>free time</td></tr>
+        <tr><td>un loisir</td><td>a hobby</td></tr>
+        <tr><td>un passe-temps</td><td>a pastime</td></tr>
+        <tr><td>les tâches ménagères (f pl)</td><td>household chores</td></tr>
+        <tr><td>un emploi du temps</td><td>a schedule</td></tr>
+        <tr><td>la détente</td><td>relaxation</td></tr>
+        <tr><td>le week-end</td><td>the weekend</td></tr>
+        <tr><td>le rythme de vie</td><td>pace of life</td></tr>
+        <tr><td>un rythme effréné</td><td>a hectic pace</td></tr>
+        <tr><td>une sortie</td><td>an outing</td></tr>
+        <tr><td>un événement</td><td>an event</td></tr>
+        <tr><td>la lecture</td><td>reading</td></tr>
+        <tr><td>une activité extrascolaire</td><td>an extracurricular activity</td></tr>
+        <tr><td>le farniente</td><td>leisurely idleness</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>se lever</td><td>to get up</td></tr>
+        <tr><td>se détendre</td><td>to relax</td></tr>
+        <tr><td>pratiquer</td><td>to practise (a hobby)</td></tr>
+        <tr><td>s'ennuyer</td><td>to get bored</td></tr>
+        <tr><td>profiter de</td><td>to make the most of</td></tr>
+        <tr><td>consacrer du temps à</td><td>to devote time to</td></tr>
+        <tr><td>organiser</td><td>to organise</td></tr>
+        <tr><td>flâner / se balader</td><td>to stroll</td></tr>
+        <tr><td>s'occuper</td><td>to keep busy</td></tr>
+        <tr><td>traîner <em>(familier)</em></td><td>to hang around</td></tr>
+        <tr><td>vaquer à ses occupations</td><td>to go about one's business</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Voyages, fêtes, rites de passage & migration</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>un voyage</td><td>a trip</td></tr>
+        <tr><td>un séjour</td><td>a stay</td></tr>
+        <tr><td>les vacances (f pl)</td><td>holidays</td></tr>
+        <tr><td>une destination</td><td>a destination</td></tr>
+        <tr><td>le tourisme</td><td>tourism</td></tr>
+        <tr><td>un(e) touriste</td><td>a tourist</td></tr>
+        <tr><td>l'hébergement (m)</td><td>accommodation</td></tr>
+        <tr><td>le patrimoine</td><td>heritage</td></tr>
+        <tr><td>une fête / une célébration</td><td>a celebration</td></tr>
+        <tr><td>une tradition / une coutume</td><td>a tradition / a custom</td></tr>
+        <tr><td>un rite de passage</td><td>a rite of passage</td></tr>
+        <tr><td>un mariage</td><td>a wedding</td></tr>
+        <tr><td>un enterrement</td><td>a funeral</td></tr>
+        <tr><td>un anniversaire</td><td>a birthday</td></tr>
+        <tr><td>un déménagement</td><td>a move / relocation</td></tr>
+        <tr><td>l'émigration (f) / l'immigration (f)</td><td>emigration / immigration</td></tr>
+        <tr><td>un(e) immigré(e)</td><td>an immigrant</td></tr>
+        <tr><td>la diaspora</td><td>the diaspora</td></tr>
+        <tr><td>la double culture</td><td>dual culture/identity</td></tr>
+        <tr><td>un visa</td><td>a visa</td></tr>
+        <tr><td>un souvenir</td><td>a memory</td></tr>
+        <tr><td>le mal du pays</td><td>homesickness</td></tr>
+        <tr><td>un jour férié</td><td>a public holiday</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>voyager / explorer</td><td>to travel / explore</td></tr>
+        <tr><td>découvrir</td><td>to discover</td></tr>
+        <tr><td>déménager</td><td>to move house</td></tr>
+        <tr><td>émigrer / immigrer</td><td>to emigrate / immigrate</td></tr>
+        <tr><td>s'installer</td><td>to settle</td></tr>
+        <tr><td>fêter / célébrer</td><td>to celebrate</td></tr>
+        <tr><td>commémorer</td><td>to commemorate</td></tr>
+        <tr><td>se souvenir de</td><td>to remember</td></tr>
+        <tr><td>s'adapter à</td><td>to adapt to</td></tr>
+        <tr><td>s'expatrier / s'exiler</td><td>to move abroad / go into exile</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Phrases utiles</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Ce qui m'a le plus marqué, c'est...</span><span class="en">What struck me most was...</span></li>
+    <li><span class="fr">Je me souviens encore de...</span><span class="en">I still remember...</span></li>
+    <li><span class="fr">Cette expérience a changé ma façon de voir les choses.</span><span class="en">This experience changed how I see things.</span></li>
+    <li><span class="fr">S'adapter à une nouvelle culture n'est pas toujours évident.</span><span class="en">Adapting to a new culture isn't always easy.</span></li>
+    <li><span class="fr">Chaque famille a ses propres traditions.</span><span class="en">Every family has its own traditions.</span></li>
+    <li><span class="fr">C'était un véritable tournant dans ma vie.</span><span class="en">It was a real turning point in my life.</span></li>
+    <li><span class="fr">Partir à l'étranger permet de s'ouvrir au monde.</span><span class="en">Going abroad opens you up to the world.</span></li>
+    <li><span class="fr">On grandit à travers les expériences qu'on vit.</span><span class="en">We grow through the experiences we live.</span></li>
+    <li><span class="fr">Il n'y a rien de tel que de découvrir une nouvelle culture.</span><span class="en">There's nothing like discovering a new culture.</span></li>
+    <li><span class="fr">Ces moments-là restent gravés dans ma mémoire.</span><span class="en">Those moments remain etched in my memory.</span></li>
+  </ul>
+
+  <div class="tip-box">
+    <strong>🇫🇷 À savoir</strong>
+    <ul>
+      <li><strong>le 14 juillet</strong> — la Fête nationale (Bastille Day), qui commémore la prise de la Bastille en 1789.</li>
+      <li><strong>les DOM-TOM</strong> — les départements et territoires d'outre-mer (ex : la Guadeloupe, la Martinique, la Réunion), souvent liés au thème de la migration et de l'identité.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="ingeniosite" class="tab-content">
+  <h2>3. Ingéniosité humaine <span class="theme-en">Human Ingenuity</span></h2>
+  <p class="subthemes">Sous-thèmes : divertissement · médias · technologie · transport · innovation</p>
+
+  <h3>Technologie & sciences</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>la technologie</td><td>technology</td></tr>
+        <tr><td>le numérique</td><td>digital technology</td></tr>
+        <tr><td>l'intelligence artificielle (f)</td><td>artificial intelligence</td></tr>
+        <tr><td>un algorithme</td><td>an algorithm</td></tr>
+        <tr><td>la robotique</td><td>robotics</td></tr>
+        <tr><td>l'automatisation (f)</td><td>automation</td></tr>
+        <tr><td>la réalité virtuelle</td><td>virtual reality</td></tr>
+        <tr><td>un appareil</td><td>a device</td></tr>
+        <tr><td>un ordinateur / un smartphone</td><td>a computer / a smartphone</td></tr>
+        <tr><td>une application</td><td>an app</td></tr>
+        <tr><td>une invention / une découverte</td><td>an invention / a discovery</td></tr>
+        <tr><td>un brevet</td><td>a patent</td></tr>
+        <tr><td>le progrès</td><td>progress</td></tr>
+        <tr><td>la recherche scientifique</td><td>scientific research</td></tr>
+        <tr><td>un(e) scientifique</td><td>a scientist</td></tr>
+        <tr><td>les données personnelles (f pl)</td><td>personal data</td></tr>
+        <tr><td>la vie privée</td><td>privacy</td></tr>
+        <tr><td>le piratage</td><td>hacking</td></tr>
+        <tr><td>un virus informatique</td><td>a computer virus</td></tr>
+        <tr><td>la cybersécurité</td><td>cybersecurity</td></tr>
+        <tr><td>la fracture numérique</td><td>the digital divide</td></tr>
+        <tr><td>un inconvénient / un avantage</td><td>a drawback / an advantage</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>inventer / innover</td><td>to invent / innovate</td></tr>
+        <tr><td>concevoir</td><td>to design / conceive</td></tr>
+        <tr><td>faciliter / améliorer</td><td>to make easier / improve</td></tr>
+        <tr><td>révolutionner</td><td>to revolutionise</td></tr>
+        <tr><td>remplacer</td><td>to replace</td></tr>
+        <tr><td>automatiser</td><td>to automate</td></tr>
+        <tr><td>numériser</td><td>to digitise</td></tr>
+        <tr><td>programmer</td><td>to program</td></tr>
+        <tr><td>pirater</td><td>to hack</td></tr>
+        <tr><td>stocker (des données)</td><td>to store (data)</td></tr>
+        <tr><td>dépendre de</td><td>to depend on</td></tr>
+        <tr><td>menacer</td><td>to threaten</td></tr>
+        <tr><td>naviguer sur</td><td>to browse (the internet)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Médias, divertissement & transport</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>les médias (m pl)</td><td>the media</td></tr>
+        <tr><td>la presse</td><td>the press</td></tr>
+        <tr><td>un réseau social</td><td>a social network</td></tr>
+        <tr><td>une plateforme</td><td>a platform</td></tr>
+        <tr><td>un abonnement</td><td>a subscription</td></tr>
+        <tr><td>le streaming</td><td>streaming</td></tr>
+        <tr><td>un podcast</td><td>a podcast</td></tr>
+        <tr><td>une chaîne</td><td>a channel</td></tr>
+        <tr><td>la publicité</td><td>advertising</td></tr>
+        <tr><td>la désinformation</td><td>disinformation</td></tr>
+        <tr><td>la censure</td><td>censorship</td></tr>
+        <tr><td>la liberté d'expression</td><td>freedom of speech</td></tr>
+        <tr><td>l'opinion publique (f)</td><td>public opinion</td></tr>
+        <tr><td>un(e) influenceur/euse</td><td>an influencer</td></tr>
+        <tr><td>le divertissement</td><td>entertainment</td></tr>
+        <tr><td>un jeu vidéo</td><td>a video game</td></tr>
+        <tr><td>le transport</td><td>transport</td></tr>
+        <tr><td>une voiture électrique</td><td>an electric car</td></tr>
+        <tr><td>les transports en commun (m pl)</td><td>public transport</td></tr>
+        <tr><td>un embouteillage</td><td>a traffic jam</td></tr>
+        <tr><td>un covoiturage</td><td>carpooling</td></tr>
+        <tr><td>un avion</td><td>a plane</td></tr>
+        <tr><td>l'essor (m)</td><td>the rise / boom</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>publier / partager</td><td>to post / share</td></tr>
+        <tr><td>télécharger</td><td>to download</td></tr>
+        <tr><td>diffuser (en direct)</td><td>to broadcast (livestream)</td></tr>
+        <tr><td>s'abonner à</td><td>to subscribe to</td></tr>
+        <tr><td>censurer</td><td>to censor</td></tr>
+        <tr><td>s'informer</td><td>to keep informed</td></tr>
+        <tr><td>divertir / se divertir</td><td>to entertain / be entertained</td></tr>
+        <tr><td>se déplacer / circuler</td><td>to get around / move (traffic)</td></tr>
+        <tr><td>covoiturer</td><td>to carpool</td></tr>
+        <tr><td>polluer</td><td>to pollute</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Phrases utiles</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Grâce aux nouvelles technologies, il est désormais possible de...</span><span class="en">Thanks to new technology, it's now possible to...</span></li>
+    <li><span class="fr">D'un côté... de l'autre côté...</span><span class="en">On one hand... on the other hand...</span></li>
+    <li><span class="fr">Cela présente à la fois des avantages et des inconvénients.</span><span class="en">This has both advantages and disadvantages.</span></li>
+    <li><span class="fr">Les réseaux sociaux ont transformé notre façon de communiquer.</span><span class="en">Social media has transformed how we communicate.</span></li>
+    <li><span class="fr">Il est indéniable que la technologie facilite notre quotidien.</span><span class="en">There's no denying technology makes daily life easier.</span></li>
+    <li><span class="fr">Cependant, cela soulève des questions éthiques.</span><span class="en">However, this raises ethical questions.</span></li>
+    <li><span class="fr">On ne peut plus se passer de son téléphone portable.</span><span class="en">We can no longer do without our mobile phone.</span></li>
+    <li><span class="fr">Il est crucial de trouver un juste équilibre entre progrès et éthique.</span><span class="en">It's crucial to find the right balance between progress and ethics.</span></li>
+    <li><span class="fr">La technologie évolue plus vite que nos lois.</span><span class="en">Technology evolves faster than our laws.</span></li>
+  </ul>
+</section>
+
+<section id="organisation" class="tab-content">
+  <h2>4. Organisation sociale <span class="theme-en">Social Organization</span></h2>
+  <p class="subthemes">Sous-thèmes : relations sociales · communauté · engagement social · éducation · monde du travail</p>
+
+  <h3>Relations & engagement social</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>une relation</td><td>a relationship</td></tr>
+        <tr><td>la communauté</td><td>community</td></tr>
+        <tr><td>un(e) citoyen(ne)</td><td>a citizen</td></tr>
+        <tr><td>la citoyenneté</td><td>citizenship</td></tr>
+        <tr><td>le service civique</td><td>civic service</td></tr>
+        <tr><td>le bénévolat</td><td>volunteering</td></tr>
+        <tr><td>un(e) bénévole</td><td>a volunteer</td></tr>
+        <tr><td>une association caritative</td><td>a charity</td></tr>
+        <tr><td>une ONG</td><td>an NGO</td></tr>
+        <tr><td>l'engagement (m)</td><td>commitment / involvement</td></tr>
+        <tr><td>une manifestation</td><td>a protest</td></tr>
+        <tr><td>une pétition</td><td>a petition</td></tr>
+        <tr><td>le voisinage / un quartier</td><td>the neighbourhood</td></tr>
+        <tr><td>la solidarité / l'entraide (f)</td><td>solidarity / mutual aid</td></tr>
+        <tr><td>un lien social</td><td>a social bond</td></tr>
+        <tr><td>le vivre-ensemble</td><td>social cohesion / living together</td></tr>
+        <tr><td>l'inclusion (f)</td><td>inclusion</td></tr>
+        <tr><td>la fracture sociale</td><td>the social divide</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>s'engager / s'impliquer</td><td>to get involved</td></tr>
+        <tr><td>faire du bénévolat</td><td>to volunteer</td></tr>
+        <tr><td>participer à</td><td>to take part in</td></tr>
+        <tr><td>contribuer à</td><td>to contribute to</td></tr>
+        <tr><td>soutenir</td><td>to support</td></tr>
+        <tr><td>militer pour</td><td>to campaign for</td></tr>
+        <tr><td>manifester</td><td>to protest</td></tr>
+        <tr><td>signer une pétition</td><td>to sign a petition</td></tr>
+        <tr><td>collaborer / fédérer</td><td>to collaborate / bring together</td></tr>
+        <tr><td>inclure</td><td>to include</td></tr>
+        <tr><td>se rassembler</td><td>to gather together</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Éducation & monde du travail</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>l'éducation (f)</td><td>education</td></tr>
+        <tr><td>un(e) élève / un(e) étudiant(e)</td><td>a pupil / a student</td></tr>
+        <tr><td>un professeur / un(e) enseignant(e)</td><td>a teacher</td></tr>
+        <tr><td>un examen / une note</td><td>an exam / a grade</td></tr>
+        <tr><td>un diplôme</td><td>a qualification</td></tr>
+        <tr><td>la pression scolaire</td><td>academic pressure</td></tr>
+        <tr><td>le décrochage scolaire</td><td>dropping out of school</td></tr>
+        <tr><td>une carrière</td><td>a career</td></tr>
+        <tr><td>un emploi / un stage</td><td>a job / an internship</td></tr>
+        <tr><td>un CDI / un CDD</td><td>a permanent / fixed-term contract</td></tr>
+        <tr><td>le télétravail</td><td>remote work</td></tr>
+        <tr><td>les horaires flexibles (m pl)</td><td>flexible hours</td></tr>
+        <tr><td>l'équilibre vie pro-vie perso (m)</td><td>work-life balance</td></tr>
+        <tr><td>le chômage</td><td>unemployment</td></tr>
+        <tr><td>la précarité</td><td>job insecurity</td></tr>
+        <tr><td>le harcèlement au travail</td><td>workplace harassment</td></tr>
+        <tr><td>un entretien d'embauche</td><td>a job interview</td></tr>
+        <tr><td>le salaire</td><td>salary</td></tr>
+        <tr><td>l'inégalité (f) / la classe sociale</td><td>inequality / social class</td></tr>
+        <tr><td>le milieu social</td><td>social background</td></tr>
+        <tr><td>l'ascenseur social (m)</td><td>social mobility</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>étudier / apprendre</td><td>to study / learn</td></tr>
+        <tr><td>enseigner</td><td>to teach</td></tr>
+        <tr><td>poursuivre des études</td><td>to pursue studies</td></tr>
+        <tr><td>embaucher</td><td>to hire</td></tr>
+        <tr><td>licencier</td><td>to lay off</td></tr>
+        <tr><td>postuler à</td><td>to apply for</td></tr>
+        <tr><td>décrocher (un emploi)</td><td>to land (a job)</td></tr>
+        <tr><td>démissionner</td><td>to resign</td></tr>
+        <tr><td>réussir / échouer</td><td>to succeed / fail</td></tr>
+        <tr><td>gagner sa vie</td><td>to earn a living</td></tr>
+        <tr><td>se former / se reconvertir</td><td>to train / retrain</td></tr>
+        <tr><td>évoluer</td><td>to progress</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Phrases utiles</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Il est primordial de s'engager pour sa communauté.</span><span class="en">It's essential to get involved in one's community.</span></li>
+    <li><span class="fr">Cela permettrait de réduire les inégalités sociales.</span><span class="en">This would help reduce social inequalities.</span></li>
+    <li><span class="fr">De plus en plus de jeunes font du bénévolat.</span><span class="en">More and more young people volunteer.</span></li>
+    <li><span class="fr">Le marché du travail est de plus en plus compétitif.</span><span class="en">The job market is increasingly competitive.</span></li>
+    <li><span class="fr">Chacun devrait avoir les mêmes chances de réussir.</span><span class="en">Everyone should have equal chances to succeed.</span></li>
+    <li><span class="fr">L'éducation joue un rôle clé dans la réduction des inégalités.</span><span class="en">Education plays a key role in reducing inequality.</span></li>
+    <li><span class="fr">L'ascenseur social semble en panne pour beaucoup de jeunes.</span><span class="en">Social mobility seems stalled for many young people.</span></li>
+    <li><span class="fr">Il est temps de repenser notre système éducatif.</span><span class="en">It's time to rethink our education system.</span></li>
+  </ul>
+
+  <h3>Repères culturels : le système français</h3>
+  <p class="subthemes">Des références concrètes pour montrer une vraie connaissance du monde francophone.</p>
+
+  <div class="culture-block">
+    <h4>🎓 Le système scolaire</h4>
+    <dl>
+      <dt>école maternelle (3-6 ans)</dt><dd>nursery / pre-school</dd>
+      <dt>école élémentaire (6-11 ans) : CP, CE1, CE2, CM1, CM2</dt><dd>primary school</dd>
+      <dt>collège (11-15 ans) : 6<sup>e</sup> → 3<sup>e</sup></dt><dd>lower secondary; ends with <strong>le brevet</strong> (Diplôme national du brevet)</dd>
+      <dt>lycée (15-18 ans) : 2<sup>de</sup>, 1<sup>ère</sup>, Terminale</dt><dd>upper secondary; ends with <strong>le baccalauréat</strong> ("le bac")</dd>
+      <dt>lycée général (spécialités : maths, physique-chimie, SVT, HGGSP, SES, langues...)</dt><dd>academic track — 3 "spécialités" chosen in 1ère, narrowed to 2 in Terminale</dd>
+      <dt>lycée technologique (STMG, ST2S, STI2D...) / lycée professionnel (CAP, bac pro)</dt><dd>technological / vocational tracks</dd>
+      <dt>les études supérieures</dt><dd>higher education: <strong>la fac</strong> (licence 3 ans → master 2 ans → doctorat), une <strong>classe prépa</strong>, une <strong>grande école</strong> (e.g. Sciences Po, HEC, Polytechnique), un <strong>BTS/BUT</strong></dd>
+      <dt>noté sur 20 · redoubler · une mention (bien/très bien)</dt><dd>graded out of 20 · to repeat a year · a distinction for high marks</dd>
+    </dl>
+  </div>
+
+  <div class="culture-block">
+    <h4>💼 Le monde du travail & la société</h4>
+    <dl>
+      <dt>le SMIC</dt><dd>the minimum wage</dd>
+      <dt>les 35 heures</dt><dd>the legal 35-hour working week</dd>
+      <dt>les congés payés</dt><dd>paid leave (5 weeks/year, standard in France)</dd>
+      <dt>la Sécurité sociale ("la Sécu")</dt><dd>France's national health & social insurance system</dd>
+      <dt>France Travail (anciennement Pôle emploi)</dt><dd>the national employment agency</dd>
+      <dt>la retraite</dt><dd>retirement / pension</dd>
+    </dl>
+  </div>
+
+  <div class="culture-block">
+    <h4>🏛️ La vie politique</h4>
+    <dl>
+      <dt>la V<sup>e</sup> République</dt><dd>the Fifth Republic — France's political system since 1958</dd>
+      <dt>le président de la République / le Premier ministre</dt><dd>the President / the Prime Minister</dd>
+      <dt>l'Assemblée nationale / le Sénat</dt><dd>the two houses of the French Parliament</dd>
+      <dt>la laïcité</dt><dd>secularism — a foundational French Republican value</dd>
+      <dt>« Liberté, Égalité, Fraternité »</dt><dd>France's national motto</dd>
+    </dl>
+  </div>
+
+  <div class="culture-block">
+    <h4>🗳️ Symboles & dates clés</h4>
+    <dl>
+      <dt>le drapeau tricolore / le coq gaulois / Marianne</dt><dd>the tricolour flag / the Gallic rooster / Marianne (symbol of the Republic)</dd>
+      <dt>La Marseillaise</dt><dd>the French national anthem</dd>
+      <dt>le 1<sup>er</sup> mai (Fête du travail) · le 8 mai (Victoire 1945) · le 11 novembre (Armistice)</dt><dd>Labour Day · Victory in Europe Day · Armistice Day — key public holidays</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="planete" class="tab-content">
+  <h2>5. Partage de la planète <span class="theme-en">Sharing the Planet</span></h2>
+  <p class="subthemes">Sous-thèmes : environnement · droits de l'homme · paix et conflit · égalité · mondialisation</p>
+
+  <h3>Environnement</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>l'environnement (m)</td><td>the environment</td></tr>
+        <tr><td>l'écologie (f)</td><td>ecology</td></tr>
+        <tr><td>un(e) écologiste</td><td>an environmentalist</td></tr>
+        <tr><td>le réchauffement climatique</td><td>global warming</td></tr>
+        <tr><td>la fonte des glaciers</td><td>melting glaciers</td></tr>
+        <tr><td>une inondation / une sécheresse</td><td>a flood / a drought</td></tr>
+        <tr><td>la pollution</td><td>pollution</td></tr>
+        <tr><td>le plastique</td><td>plastic</td></tr>
+        <tr><td>le développement durable</td><td>sustainable development</td></tr>
+        <tr><td>la transition énergétique</td><td>energy transition</td></tr>
+        <tr><td>une énergie renouvelable</td><td>a renewable energy</td></tr>
+        <tr><td>les déchets (m pl)</td><td>waste</td></tr>
+        <tr><td>le gaspillage</td><td>waste(fulness)</td></tr>
+        <tr><td>le recyclage / le zéro déchet</td><td>recycling / zero waste</td></tr>
+        <tr><td>la déforestation</td><td>deforestation</td></tr>
+        <tr><td>l'agriculture biologique (f)</td><td>organic farming</td></tr>
+        <tr><td>une catastrophe naturelle</td><td>a natural disaster</td></tr>
+        <tr><td>l'empreinte carbone (f)</td><td>carbon footprint</td></tr>
+        <tr><td>la biodiversité</td><td>biodiversity</td></tr>
+        <tr><td>une espèce menacée</td><td>an endangered species</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>polluer</td><td>to pollute</td></tr>
+        <tr><td>protéger / préserver</td><td>to protect / preserve</td></tr>
+        <tr><td>gaspiller</td><td>to waste</td></tr>
+        <tr><td>recycler / trier (ses déchets)</td><td>to recycle / sort waste</td></tr>
+        <tr><td>économiser / limiter</td><td>to save / limit</td></tr>
+        <tr><td>consommer</td><td>to consume</td></tr>
+        <tr><td>menacer</td><td>to threaten</td></tr>
+        <tr><td>sensibiliser</td><td>to raise awareness</td></tr>
+        <tr><td>réduire</td><td>to reduce</td></tr>
+        <tr><td>compenser (son empreinte)</td><td>to offset (one's footprint)</td></tr>
+        <tr><td>reboiser</td><td>to reforest</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Droits de l'homme, égalité, paix & enjeux mondiaux</h3>
+  <div class="vocab-grid">
+    <table class="vocab-table">
+      <caption>Noms</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>les droits de l'homme (m pl)</td><td>human rights</td></tr>
+        <tr><td>un droit fondamental</td><td>a fundamental right</td></tr>
+        <tr><td>l'égalité (f) / l'inégalité (f)</td><td>equality / inequality</td></tr>
+        <tr><td>la parité</td><td>gender parity</td></tr>
+        <tr><td>la discrimination</td><td>discrimination</td></tr>
+        <tr><td>le sexisme / le racisme</td><td>sexism / racism</td></tr>
+        <tr><td>l'homophobie (f)</td><td>homophobia</td></tr>
+        <tr><td>la communauté LGBT+</td><td>the LGBT+ community</td></tr>
+        <tr><td>la justice sociale</td><td>social justice</td></tr>
+        <tr><td>la guerre / la paix</td><td>war / peace</td></tr>
+        <tr><td>un conflit</td><td>a conflict</td></tr>
+        <tr><td>un accord de paix</td><td>a peace agreement</td></tr>
+        <tr><td>les Nations unies (f pl)</td><td>the United Nations</td></tr>
+        <tr><td>une ONG</td><td>an NGO</td></tr>
+        <tr><td>l'aide humanitaire (f)</td><td>humanitarian aid</td></tr>
+        <tr><td>la mondialisation</td><td>globalisation</td></tr>
+        <tr><td>la pauvreté / la faim</td><td>poverty / hunger</td></tr>
+        <tr><td>un réfugié / une réfugiée</td><td>a refugee</td></tr>
+        <tr><td>la surconsommation</td><td>overconsumption</td></tr>
+        <tr><td>le commerce équitable</td><td>fair trade</td></tr>
+      </tbody>
+    </table>
+    <table class="vocab-table">
+      <caption>Verbes</caption>
+      <thead><tr><th>Français</th><th>English</th></tr></thead>
+      <tbody>
+        <tr><td>lutter contre</td><td>to fight against</td></tr>
+        <tr><td>défendre</td><td>to defend</td></tr>
+        <tr><td>dénoncer</td><td>to denounce</td></tr>
+        <tr><td>revendiquer</td><td>to claim / demand (a right)</td></tr>
+        <tr><td>s'engager pour</td><td>to commit to</td></tr>
+        <tr><td>garantir</td><td>to guarantee</td></tr>
+        <tr><td>négocier / coopérer</td><td>to negotiate / cooperate</td></tr>
+        <tr><td>s'unir</td><td>to unite</td></tr>
+        <tr><td>envahir</td><td>to invade</td></tr>
+        <tr><td>fuir</td><td>to flee</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Phrases utiles</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Il est urgent d'agir contre le réchauffement climatique.</span><span class="en">It's urgent to act against global warming.</span></li>
+    <li><span class="fr">Nous devons tous faire notre part pour protéger la planète.</span><span class="en">We must all do our part to protect the planet.</span></li>
+    <li><span class="fr">Il est inacceptable que tant de gens vivent dans la pauvreté.</span><span class="en">It's unacceptable that so many people live in poverty.</span></li>
+    <li><span class="fr">Chaque geste compte, aussi petit soit-il.</span><span class="en">Every action counts, however small.</span></li>
+    <li><span class="fr">Il est grand temps de repenser notre mode de consommation.</span><span class="en">It's high time we rethought how we consume.</span></li>
+    <li><span class="fr">La solidarité internationale est essentielle face à ces enjeux.</span><span class="en">International solidarity is essential in the face of these issues.</span></li>
+    <li><span class="fr">Les générations futures paieront le prix de notre inaction.</span><span class="en">Future generations will pay the price for our inaction.</span></li>
+    <li><span class="fr">Il faut agir localement tout en pensant globalement.</span><span class="en">We must act locally while thinking globally.</span></li>
+  </ul>
+</section>
+
+<section id="toolkit" class="tab-content">
+  <h2>Connecteurs & Idiomes <span class="theme-en">Connectors & Idioms</span></h2>
+  <p>Transversal — utilisable dans n'importe quel thème, à l'oral comme à l'écrit. La richesse des connecteurs est l'un des critères qui distingue une copie à 7 d'une copie à 5.</p>
+
+  <h3>Connecteurs logiques</h3>
+  <div class="connector-grid">
+    <div class="connector-card">
+      <h4>Addition</h4>
+      <ul>
+        <li><strong>de plus</strong> — moreover</li>
+        <li><strong>en outre</strong> — furthermore</li>
+        <li><strong>de surcroît</strong> — what's more</li>
+        <li><strong>qui plus est</strong> — what's more</li>
+        <li><strong>d'ailleurs</strong> — besides</li>
+        <li><strong>non seulement... mais aussi...</strong> — not only... but also...</li>
+      </ul>
+    </div>
+    <div class="connector-card">
+      <h4>Contraste / opposition</h4>
+      <ul>
+        <li><strong>cependant / toutefois</strong> — however</li>
+        <li><strong>néanmoins / pourtant</strong> — nevertheless / yet</li>
+        <li><strong>en revanche</strong> — on the other hand (soutenu)</li>
+        <li><strong>par contre</strong> — on the other hand (courant)</li>
+        <li><strong>au contraire</strong> — on the contrary</li>
+        <li><strong>malgré</strong> + nom — despite</li>
+        <li><strong>bien que / quoique</strong> + subj. — although</li>
+        <li><strong>alors que</strong> — whereas</li>
+        <li><strong>or</strong> — now / yet (introduit un rebondissement)</li>
+      </ul>
+    </div>
+    <div class="connector-card">
+      <h4>Cause</h4>
+      <ul>
+        <li><strong>car / parce que</strong> — because</li>
+        <li><strong>puisque</strong> — since (raison connue)</li>
+        <li><strong>étant donné que</strong> — given that</li>
+        <li><strong>à cause de</strong> — because of (neutre/négatif)</li>
+        <li><strong>grâce à</strong> — thanks to (positif)</li>
+        <li><strong>sous prétexte que</strong> — on the pretext that</li>
+      </ul>
+    </div>
+    <div class="connector-card">
+      <h4>Conséquence</h4>
+      <ul>
+        <li><strong>par conséquent</strong> — consequently</li>
+        <li><strong>c'est pourquoi</strong> — that's why</li>
+        <li><strong>donc / ainsi</strong> — so / thus</li>
+        <li><strong>de ce fait</strong> — as a result</li>
+        <li><strong>si bien que</strong> — with the result that</li>
+        <li><strong>d'où</strong> — hence</li>
+      </ul>
+    </div>
+    <div class="connector-card">
+      <h4>Séquence</h4>
+      <ul>
+        <li><strong>tout d'abord</strong> — first of all</li>
+        <li><strong>ensuite / puis</strong> — next / then</li>
+        <li><strong>par ailleurs</strong> — besides</li>
+        <li><strong>d'une part... d'autre part...</strong> — on one hand... on the other...</li>
+        <li><strong>auparavant</strong> — beforehand</li>
+        <li><strong>enfin</strong> — finally</li>
+      </ul>
+    </div>
+    <div class="connector-card">
+      <h4>Conclusion</h4>
+      <ul>
+        <li><strong>en somme</strong> — in short</li>
+        <li><strong>pour conclure</strong> — to conclude</li>
+        <li><strong>en définitive</strong> — ultimately</li>
+        <li><strong>somme toute</strong> — all things considered</li>
+        <li><strong>en fin de compte</strong> — in the end</li>
+        <li><strong>tout compte fait</strong> — all things considered</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Phrases d'opinion & d'argumentation</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">À mon avis / selon moi / d'après moi...</span><span class="en">In my opinion...</span></li>
+    <li><span class="fr">Il me semble que...</span><span class="en">It seems to me that...</span></li>
+    <li><span class="fr">Je suis convaincu(e) que...</span><span class="en">I'm convinced that...</span></li>
+    <li><span class="fr">On pourrait dire que...</span><span class="en">One could say that...</span></li>
+    <li><span class="fr">Certains diraient que..., alors que d'autres pensent que...</span><span class="en">Some would say that..., while others think...</span></li>
+    <li><span class="fr">Il ne faut pas oublier que...</span><span class="en">We mustn't forget that...</span></li>
+    <li><span class="fr">Force est de constater que...</span><span class="en">It must be acknowledged that...</span></li>
+    <li><span class="fr">Il va sans dire que...</span><span class="en">It goes without saying that...</span></li>
+    <li><span class="fr">Il est indéniable que...</span><span class="en">It's undeniable that...</span></li>
+  </ul>
+
+  <h3>Expressions idiomatiques</h3>
+  <ul class="phrase-list">
+    <li><span class="fr">Avoir le cafard</span><span class="en">to feel down / blue</span></li>
+    <li><span class="fr">Avoir un coup de foudre</span><span class="en">love at first sight</span></li>
+    <li><span class="fr">Poser un lapin à quelqu'un</span><span class="en">to stand someone up</span></li>
+    <li><span class="fr">Coûter les yeux de la tête</span><span class="en">to cost a fortune</span></li>
+    <li><span class="fr">Mettre la main à la pâte</span><span class="en">to pitch in and help</span></li>
+    <li><span class="fr">Tourner autour du pot</span><span class="en">to beat around the bush</span></li>
+    <li><span class="fr">Avoir d'autres chats à fouetter</span><span class="en">to have other things to worry about</span></li>
+    <li><span class="fr">Ce n'est pas la mer à boire</span><span class="en">it's not that difficult</span></li>
+    <li><span class="fr">Avoir le cœur sur la main</span><span class="en">to be very generous</span></li>
+    <li><span class="fr">Être au four et au moulin</span><span class="en">to be juggling everything at once</span></li>
+    <li><span class="fr">Prendre le taureau par les cornes</span><span class="en">to take the bull by the horns</span></li>
+    <li><span class="fr">Ne pas mettre tous ses œufs dans le même panier</span><span class="en">don't put all your eggs in one basket</span></li>
+    <li><span class="fr">Petit à petit, l'oiseau fait son nid</span><span class="en">little by little, the bird builds its nest</span></li>
+    <li><span class="fr">Il ne faut pas vendre la peau de l'ours avant de l'avoir tué</span><span class="en">don't count your chickens before they hatch</span></li>
+    <li><span class="fr">Avoir la tête dans les nuages</span><span class="en">to have your head in the clouds</span></li>
+    <li><span class="fr">Se creuser la tête</span><span class="en">to rack your brain</span></li>
+    <li><span class="fr">Faire d'une pierre deux coups</span><span class="en">to kill two birds with one stone</span></li>
+    <li><span class="fr">Donner sa langue au chat</span><span class="en">to give up (guessing)</span></li>
+    <li><span class="fr">Casser les pieds à quelqu'un</span><span class="en">to annoy someone</span></li>
+    <li><span class="fr">Être dans de beaux draps</span><span class="en">to be in a real mess</span></li>
+    <li><span class="fr">Mettre les pieds dans le plat</span><span class="en">to put your foot in it</span></li>
+    <li><span class="fr">Avoir le trac</span><span class="en">to have stage fright / exam nerves</span></li>
+    <li><span class="fr">Ne pas y aller par quatre chemins</span><span class="en">to get straight to the point</span></li>
+    <li><span class="fr">Avoir un chat dans la gorge</span><span class="en">to have a frog in one's throat</span></li>
+    <li><span class="fr">Jeter l'éponge</span><span class="en">to throw in the towel</span></li>
+    <li><span class="fr">Mettre du beurre dans les épinards</span><span class="en">to improve one's financial situation a little</span></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Fait avec Claude pour réviser à fond. Ce n'est pas un document officiel de l'IB — recoupe avec tes notes de cours si possible. Bon courage pour la suite ! 🍀</p>
+</footer>
+
+<script>
+function showTab(id, btn){
+  document.querySelectorAll('.tab-content').forEach(function(el){ el.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(el){ el.classList.remove('active'); });
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ===================== CONJUGATION ENGINE ===================== */
+const IRREGULAR = {
+  "être": {pres:["suis","es","est","sommes","êtes","sont"], fut_stem:"ser", subj:["sois","sois","soit","soyons","soyez","soient"], pp:"été", aux:"avoir"},
+  "avoir": {pres:["ai","as","a","avons","avez","ont"], fut_stem:"aur", subj:["aie","aies","ait","ayons","ayez","aient"], pp:"eu", aux:"avoir"},
+  "aller": {pres:["vais","vas","va","allons","allez","vont"], fut_stem:"ir", subj:["aille","ailles","aille","allions","alliez","aillent"], pp:"allé", aux:"être"},
+  "faire": {pres:["fais","fais","fait","faisons","faites","font"], fut_stem:"fer", subj:["fasse","fasses","fasse","fassions","fassiez","fassent"], pp:"fait", aux:"avoir"},
+  "dire": {pres:["dis","dis","dit","disons","dites","disent"], fut_stem:"dir", subj:["dise","dises","dise","disions","disiez","disent"], pp:"dit", aux:"avoir"},
+  "voir": {pres:["vois","vois","voit","voyons","voyez","voient"], fut_stem:"verr", subj:["voie","voies","voie","voyions","voyiez","voient"], pp:"vu", aux:"avoir"},
+  "savoir": {pres:["sais","sais","sait","savons","savez","savent"], fut_stem:"saur", subj:["sache","saches","sache","sachions","sachiez","sachent"], pp:"su", aux:"avoir"},
+  "pouvoir": {pres:["peux","peux","peut","pouvons","pouvez","peuvent"], fut_stem:"pourr", subj:["puisse","puisses","puisse","puissions","puissiez","puissent"], pp:"pu", aux:"avoir"},
+  "vouloir": {pres:["veux","veux","veut","voulons","voulez","veulent"], fut_stem:"voudr", subj:["veuille","veuilles","veuille","voulions","vouliez","veuillent"], pp:"voulu", aux:"avoir"},
+  "devoir": {pres:["dois","dois","doit","devons","devez","doivent"], fut_stem:"devr", subj:["doive","doives","doive","devions","deviez","doivent"], pp:"dû", aux:"avoir"},
+  "venir": {pres:["viens","viens","vient","venons","venez","viennent"], fut_stem:"viendr", subj:["vienne","viennes","vienne","venions","veniez","viennent"], pp:"venu", aux:"être"},
+  "tenir": {pres:["tiens","tiens","tient","tenons","tenez","tiennent"], fut_stem:"tiendr", subj:["tienne","tiennes","tienne","tenions","teniez","tiennent"], pp:"tenu", aux:"avoir"},
+  "prendre": {pres:["prends","prends","prend","prenons","prenez","prennent"], fut_stem:"prendr", subj:["prenne","prennes","prenne","prenions","preniez","prennent"], pp:"pris", aux:"avoir"},
+  "mettre": {pres:["mets","mets","met","mettons","mettez","mettent"], fut_stem:"mettr", subj:["mette","mettes","mette","mettions","mettiez","mettent"], pp:"mis", aux:"avoir"},
+  "connaître": {pres:["connais","connais","connaît","connaissons","connaissez","connaissent"], fut_stem:"connaîtr", subj:["connaisse","connaisses","connaisse","connaissions","connaissiez","connaissent"], pp:"connu", aux:"avoir"},
+  "naître": {pres:["nais","nais","naît","naissons","naissez","naissent"], fut_stem:"naîtr", subj:["naisse","naisses","naisse","naissions","naissiez","naissent"], pp:"né", aux:"être"},
+  "croire": {pres:["crois","crois","croit","croyons","croyez","croient"], fut_stem:"croir", subj:["croie","croies","croie","croyions","croyiez","croient"], pp:"cru", aux:"avoir"},
+  "boire": {pres:["bois","bois","boit","buvons","buvez","boivent"], fut_stem:"boir", subj:["boive","boives","boive","buvions","buviez","boivent"], pp:"bu", aux:"avoir"},
+  "courir": {pres:["cours","cours","court","courons","courez","courent"], fut_stem:"courr", subj:["coure","coures","coure","courions","couriez","courent"], pp:"couru", aux:"avoir"},
+  "mourir": {pres:["meurs","meurs","meurt","mourons","mourez","meurent"], fut_stem:"mourr", subj:["meure","meures","meure","mourions","mouriez","meurent"], pp:"mort", aux:"être"},
+  "vivre": {pres:["vis","vis","vit","vivons","vivez","vivent"], fut_stem:"vivr", subj:["vive","vives","vive","vivions","viviez","vivent"], pp:"vécu", aux:"avoir"},
+  "écrire": {pres:["écris","écris","écrit","écrivons","écrivez","écrivent"], fut_stem:"écrir", subj:["écrive","écrives","écrive","écrivions","écriviez","écrivent"], pp:"écrit", aux:"avoir"},
+  "lire": {pres:["lis","lis","lit","lisons","lisez","lisent"], fut_stem:"lir", subj:["lise","lises","lise","lisions","lisiez","lisent"], pp:"lu", aux:"avoir"},
+  "rire": {pres:["ris","ris","rit","rions","riez","rient"], fut_stem:"rir", subj:["rie","ries","rie","riions","riiez","rient"], pp:"ri", aux:"avoir"},
+  "suivre": {pres:["suis","suis","suit","suivons","suivez","suivent"], fut_stem:"suivr", subj:["suive","suives","suive","suivions","suiviez","suivent"], pp:"suivi", aux:"avoir"},
+  "recevoir": {pres:["reçois","reçois","reçoit","recevons","recevez","reçoivent"], fut_stem:"recevr", subj:["reçoive","reçoives","reçoive","recevions","receviez","reçoivent"], pp:"reçu", aux:"avoir"},
+  "falloir": {pres:[null,null,"faut",null,null,null], fut_stem:"faudr", subj:[null,null,"faille",null,null,null], pp:"fallu", aux:"avoir", impersonal:true, impf_override:[null,null,"fallait",null,null,null]},
+  "pleuvoir": {pres:[null,null,"pleut",null,null,null], fut_stem:"pleuvr", subj:[null,null,"pleuve",null,null,null], pp:"plu", aux:"avoir", impersonal:true, impf_override:[null,null,"pleuvait",null,null,null]},
+  "valoir": {pres:["vaux","vaux","vaut","valons","valez","valent"], fut_stem:"vaudr", subj:["vaille","vailles","vaille","valions","valiez","vaillent"], pp:"valu", aux:"avoir"},
+  "ouvrir": {pres:["ouvre","ouvres","ouvre","ouvrons","ouvrez","ouvrent"], fut_stem:"ouvrir", subj:["ouvre","ouvres","ouvre","ouvrions","ouvriez","ouvrent"], pp:"ouvert", aux:"avoir"},
+  "offrir": {pres:["offre","offres","offre","offrons","offrez","offrent"], fut_stem:"offrir", subj:["offre","offres","offre","offrions","offriez","offrent"], pp:"offert", aux:"avoir"},
+  "souffrir": {pres:["souffre","souffres","souffre","souffrons","souffrez","souffrent"], fut_stem:"souffrir", subj:["souffre","souffres","souffre","souffrions","souffriez","souffrent"], pp:"souffert", aux:"avoir"},
+  "couvrir": {pres:["couvre","couvres","couvre","couvrons","couvrez","couvrent"], fut_stem:"couvrir", subj:["couvre","couvres","couvre","couvrions","couvriez","couvrent"], pp:"couvert", aux:"avoir"},
+  "découvrir": {pres:["découvre","découvres","découvre","découvrons","découvrez","découvrent"], fut_stem:"découvrir", subj:["découvre","découvres","découvre","découvrions","découvriez","découvrent"], pp:"découvert", aux:"avoir"},
+  "dormir": {pres:["dors","dors","dort","dormons","dormez","dorment"], fut_stem:"dormir", subj:["dorme","dormes","dorme","dormions","dormiez","dorment"], pp:"dormi", aux:"avoir"},
+  "partir": {pres:["pars","pars","part","partons","partez","partent"], fut_stem:"partir", subj:["parte","partes","parte","partions","partiez","partent"], pp:"parti", aux:"être"},
+  "sortir": {pres:["sors","sors","sort","sortons","sortez","sortent"], fut_stem:"sortir", subj:["sorte","sortes","sorte","sortions","sortiez","sortent"], pp:"sorti", aux:"être"},
+  "sentir": {pres:["sens","sens","sent","sentons","sentez","sentent"], fut_stem:"sentir", subj:["sente","sentes","sente","sentions","sentiez","sentent"], pp:"senti", aux:"avoir"},
+  "servir": {pres:["sers","sers","sert","servons","servez","servent"], fut_stem:"servir", subj:["serve","serves","serve","servions","serviez","servent"], pp:"servi", aux:"avoir"},
+  "envoyer": {pres:["envoie","envoies","envoie","envoyons","envoyez","envoient"], fut_stem:"enverr", subj:["envoie","envoies","envoie","envoyions","envoyiez","envoient"], pp:"envoyé", aux:"avoir"},
+  "craindre": {pres:["crains","crains","craint","craignons","craignez","craignent"], fut_stem:"craindr", subj:["craigne","craignes","craigne","craignions","craigniez","craignent"], pp:"craint", aux:"avoir"},
+  "conduire": {pres:["conduis","conduis","conduit","conduisons","conduisez","conduisent"], fut_stem:"conduir", subj:["conduise","conduises","conduise","conduisions","conduisiez","conduisent"], pp:"conduit", aux:"avoir"}
+};
+
+const ETRE_VERBS_EXTRA = new Set(["arriver","entrer","monter","descendre","rester","tomber","retourner","rentrer","devenir","revenir"]);
+const PARTIR_TYPE = new Set(["partir","sortir","dormir","sentir","servir","mentir","repartir","ressortir","endormir","desservir","démentir","ressentir"]);
+const DOUBLING_ELER_ETER = new Set(["appeler","rappeler","épeler","jeter","rejeter","projeter","feuilleter","étiqueter"]);
+const ACCENT_ELER_ETER = new Set(["acheter","geler","peler","congeler","marteler","modeler","harceler","écarteler"]);
+
+const presEndings = ["e","es","e","ons","ez","ent"];
+const impfEndings = ["ais","ais","ait","ions","iez","aient"];
+const futEndings = ["ai","as","a","ons","ez","ont"];
+const condEndings = ["ais","ais","ait","ions","iez","aient"];
+
+function applyCG(radical, ending, letter){
+  const needsChange = /^[ao]/.test(ending);
+  if(!needsChange) return radical + ending;
+  if(letter === 'c') return radical.slice(0,-1) + 'ç' + ending;
+  return radical.slice(0,-1) + 'ge' + ending;
+}
+
+function buildRegular(inf){
+  let pres, impf, futStem, pp, group;
+
+  if(inf.endsWith("er")){
+    group = "er";
+    const radical = inf.slice(0,-2);
+    const isCer = radical.endsWith("c");
+    const isGer = radical.endsWith("g");
+    const isElerEter = (inf.endsWith("eler")||inf.endsWith("eter"));
+    const isEConsonant = !isElerEter && /e[bcdfghjklmnpqrstvxz]$/.test(radical) && !/é[bcdfghjklmnpqrstvxz]$/.test(radical);
+    const isEAccentConsonant = /é[bcdfghjklmnpqrstvxz]$/.test(radical);
+    const isOyerUyer = /[ou]y$/.test(radical);
+    const isAyer = radical.endsWith("ay");
+
+    if(isCer || isGer){
+      const letter = isCer ? 'c' : 'g';
+      pres = presEndings.map(e=>applyCG(radical,e,letter));
+      impf = impfEndings.map(e=>applyCG(radical,e,letter));
+      futStem = inf;
+      pp = radical + "é";
+    } else if(isElerEter && DOUBLING_ELER_ETER.has(inf)){
+      const doubled = radical + radical.slice(-1);
+      pres = [doubled+"e", doubled+"es", doubled+"e", radical+"ons", radical+"ez", doubled+"ent"];
+      impf = impfEndings.map(e=>radical+e);
+      futStem = doubled + "er";
+      pp = radical + "é";
+    } else if(isElerEter && ACCENT_ELER_ETER.has(inf)){
+      const eg = radical.slice(0,-2) + "è" + radical.slice(-1);
+      pres = [eg+"e",eg+"es",eg+"e",radical+"ons",radical+"ez",eg+"ent"];
+      impf = impfEndings.map(e=>radical+e);
+      futStem = eg + "er";
+      pp = radical + "é";
+    } else if(isElerEter){
+      const doubled = radical + radical.slice(-1);
+      pres = [doubled+"e", doubled+"es", doubled+"e", radical+"ons", radical+"ez", doubled+"ent"];
+      impf = impfEndings.map(e=>radical+e);
+      futStem = doubled + "er";
+      pp = radical + "é";
+    } else if(isEConsonant){
+      const eg = radical.slice(0,-2) + "è" + radical.slice(-1);
+      pres = [eg+"e",eg+"es",eg+"e",radical+"ons",radical+"ez",eg+"ent"];
+      impf = impfEndings.map(e=>radical+e);
+      futStem = eg + "er";
+      pp = radical + "é";
+    } else if(isEAccentConsonant){
+      const eg = radical.slice(0,-2) + "è" + radical.slice(-1);
+      pres = [eg+"e",eg+"es",eg+"e",radical+"ons",radical+"ez",eg+"ent"];
+      impf = impfEndings.map(e=>radical+e);
+      futStem = inf;
+      pp = radical + "é";
+    } else if(isOyerUyer || isAyer){
+      const iForm = radical.slice(0,-1) + "i";
+      pres = [iForm+"e",iForm+"es",iForm+"e",radical+"ons",radical+"ez",iForm+"ent"];
+      impf = impfEndings.map(e=>radical+e);
+      futStem = iForm + "er";
+      pp = radical + "é";
+    } else {
+      pres = presEndings.map(e=>radical+e);
+      impf = impfEndings.map(e=>radical+e);
+      futStem = inf;
+      pp = radical + "é";
+    }
+  } else if(inf.endsWith("ir") && PARTIR_TYPE.has(inf)){
+    group = "ir-partir";
+    const pluralStem = inf.slice(0,-2);
+    const singStem = pluralStem.slice(0,-1);
+    pres = [singStem+"s", singStem+"s", singStem+"t", pluralStem+"ons", pluralStem+"ez", pluralStem+"ent"];
+    impf = impfEndings.map(e=>pluralStem+e);
+    futStem = inf;
+    pp = pluralStem + "i";
+  } else if(inf.endsWith("ir")){
+    group = "ir";
+    const radical = inf.slice(0,-2);
+    pres = [radical+"is",radical+"is",radical+"it",radical+"issons",radical+"issez",radical+"issent"];
+    impf = [radical+"issais",radical+"issais",radical+"issait",radical+"issions",radical+"issiez",radical+"issaient"];
+    futStem = inf;
+    pp = radical + "i";
+  } else if(inf.endsWith("re")){
+    group = "re";
+    const radical = inf.slice(0,-2);
+    pres = [radical+"s",radical+"s",radical, radical+"ons",radical+"ez",radical+"ent"];
+    impf = impfEndings.map(e=>radical+e);
+    futStem = radical + "r";
+    pp = radical + "u";
+  } else {
+    group = "unknown";
+    pres = [inf,inf,inf,inf,inf,inf];
+    impf = impfEndings.map(e=>inf+e);
+    futStem = inf;
+    pp = inf;
+  }
+
+  let subj;
+  if(group === "er"){
+    const radical = inf.slice(0,-2);
+    subj = [pres[0], pres[1], pres[2], radical+"ions", radical+"iez", pres[5]];
+  } else {
+    const ilsForm = pres[5];
+    const subjRadical = ilsForm.slice(0, ilsForm.length-3);
+    subj = ["e","es","e","ions","iez","ent"].map(e=>subjRadical+e);
+  }
+
+  const approx = (group==="unknown");
+  return {pres, impf, fut_stem:futStem, subj, pp, aux:"avoir", approx, group};
+}
+
+function getBaseInfo(infRaw){
+  let inf = infRaw.trim().toLowerCase();
+  let reflexive = false;
+  if(inf.startsWith("se ")){ inf = inf.slice(3); reflexive = true; }
+  else if(inf.startsWith("s'")){ inf = inf.slice(2); reflexive = true; }
+  return {inf, reflexive};
+}
+
+function conjugate(infRaw){
+  const {inf, reflexive} = getBaseInfo(infRaw);
+  let data, source;
+  if(IRREGULAR[inf]){ data = IRREGULAR[inf]; source="irregular"; }
+  else { data = buildRegular(inf); source = data.approx? "approx":"regular"; }
+
+  let aux = reflexive ? "être" : data.aux;
+  if(!reflexive && ETRE_VERBS_EXTRA.has(inf)) aux = "être";
+
+  const pres = data.pres;
+  const subj = data.subj;
+  const futStem = data.fut_stem;
+
+  let impf;
+  if(data.impf_override) impf = data.impf_override;
+  else if(inf === "être") impf = impfEndings.map(e=>"ét"+e);
+  else if(data.impf) impf = data.impf;
+  else {
+    const nousForm = pres[3];
+    const impfStem = nousForm ? nousForm.slice(0,-3) : inf;
+    impf = impfEndings.map(e=>impfStem+e);
+  }
+
+  let fut = futEndings.map(e=>futStem? futStem+e : null);
+  let cond = condEndings.map(e=>futStem? futStem+e : null);
+
+  if(data.impersonal){
+    const mask = arr => arr.map((v,i)=> i===2? v : null);
+    fut = mask(fut); cond = mask(cond);
+  }
+
+  return {inf, reflexive, aux, pres, impf, fut, cond, subj, pp:data.pp, source};
+}
+
+function quickConj(v){
+  document.getElementById('verbInput').value = v;
+  runConjugation();
+}
+
+function isVowelStart(w){
+  return /^[aeiouhàâéèêëîïôùû]/i.test(w);
+}
+
+function reflWrap(idx, verbPart, reflPro){
+  if(verbPart === null || verbPart === undefined) return "—";
+  const rp = reflPro[idx];
+  if(rp === "nous" || rp === "vous") return rp + " " + verbPart;
+  return (isVowelStart(verbPart) ? rp.charAt(0)+"'" : rp+" ") + verbPart;
+}
+
+function runConjugation(){
+  const raw = document.getElementById('verbInput').value;
+  if(!raw || !raw.trim()) return;
+  const r = conjugate(raw);
+  renderResult(raw.trim(), r);
+}
+
+function renderResult(raw, r){
+  const pronouns = ["je","tu","il/elle/on","nous","vous","ils/elles"];
+  const reflPro = ["me","te","se","nous","vous","se"];
+  const auxData = r.aux === "être" ? IRREGULAR["être"] : IRREGULAR["avoir"];
+  const auxPres = auxData.pres;
+  const allerPres = IRREGULAR["aller"].pres;
+
+  let rows = "";
+  for(let i=0;i<6;i++){
+    const cell = (arr) => {
+      const v = arr[i];
+      if(v===null||v===undefined) return "—";
+      return r.reflexive ? reflWrap(i, v, reflPro) : v;
+    };
+
+    const presCell = cell(r.pres);
+    const impfCell = cell(r.impf);
+    const futCell = cell(r.fut);
+    const condCell = cell(r.cond);
+    const subjCell = cell(r.subj);
+
+    let pcCell = "—";
+    if(auxPres[i]){
+      const combined = auxPres[i] + " " + r.pp;
+      pcCell = r.reflexive ? reflWrap(i, combined, reflPro) : combined;
+    }
+
+    let fpCell = "—";
+    if(allerPres[i]){
+      if(r.reflexive){
+        const rp = reflPro[i];
+        const dispRp = (rp==="nous"||rp==="vous") ? rp+" " : (isVowelStart(r.inf) ? rp.charAt(0)+"' " : rp+" ");
+        fpCell = allerPres[i] + " " + dispRp + r.inf;
+      } else {
+        fpCell = allerPres[i] + " " + r.inf;
+      }
+    }
+
+    rows += "<tr><td>"+pronouns[i]+"</td><td>"+presCell+"</td><td>"+impfCell+"</td><td>"+pcCell+"</td><td>"+fpCell+"</td><td>"+futCell+"</td><td>"+condCell+"</td><td>"+subjCell+"</td></tr>";
+  }
+
+  let note;
+  if(r.source === "approx"){
+    note = '<p class="note">⚠️ Verbe non reconnu dans le dictionnaire — conjugaison régulière estimée (terminaison non standard). Vérifie ce verbe si tu as un doute.</p>';
+  } else {
+    note = '<p class="note">Auxiliaire au passé composé : <strong>'+r.aux+'</strong>'+(r.reflexive?" (verbe pronominal)":"")+'. Avec être, le participe s\'accorde avec le sujet (+e au féminin, +s au pluriel).</p>';
+  }
+
+  document.getElementById('conjResults').innerHTML =
+    '<h4>'+ (r.reflexive? "se ":"") + raw.replace(/^(se |s\')/,'') +'</h4>' + note +
+    '<div class="table-scroll"><table class="conj-table"><thead><tr><th></th><th>Présent</th><th>Imparfait</th><th>Passé composé</th><th>Futur proche</th><th>Futur simple</th><th>Conditionnel</th><th>Subjonctif</th></tr></thead><tbody>'+rows+'</tbody></table></div>';
+}
+</script>
+
+</body>
+</html>
